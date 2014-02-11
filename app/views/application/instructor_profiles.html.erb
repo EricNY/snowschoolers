@@ -1,0 +1,129 @@
+<div class="navbar navbar-fixed-top NavHeight">
+    <div class="navbar-inner NavHeight">
+        <div class="container">
+            <div class="nav-collapse">
+                <h1 class="nav  pull-left">SnowSchoolers</h1>
+                <ul class="nav  pull-right">
+                    <li>
+                        <%= link_to('Home', home_path) %>
+                    </li>
+                    <li class="active">
+                        <%= link_to('Browse Instructors', instructor_profiles_path) %>
+                    </li>
+                    <li>
+                        <%= link_to('Pricing', pricing_path) %>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.nav-collapse -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.navbar-inner -->
+</div>
+<!-- /.navbar -->
+
+<div class="container-fluid SliderBg SliderBorder Divider InnerTitle">
+    <div class="container Divider">
+        <h1 class="">
+            <span>Our Instructors come from all over the globe. Their personalites, backgrounds and teaching styles all differ but one thing remains constant through all of them - a passion for the sport!!</span>
+        </h1>
+    </div>
+</div>
+
+<!-- hardwired instructor profiles -->
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <h2 class="BigHeader">Current Instructors</h2>
+            <hr>
+        </div>
+        <div class="span3">
+            <h2 class="BigHeader">Tim</h2>
+            <ul class="hover_block">
+                <li class="OutLine">
+                    <a><img src="img/1.jpg" alt="test" />
+                        <span>Tim hails from New York where he learned to ski as a kid and first began teaching children's ski lessons in high school at the local resort. He later coached the travelling freestyle ski team, and eventually moved to Crested Butte to live the ski bum dream for awhile, which included competing in the U.S. Freeskiing Championships. He recently moved to Tahoe 3 years ago with his wife and family, and has adopted Squaw-Alpin as his new home resort on the west coast. With nearly three decades of instructor experience across all skill levels, he will happily share his local secrets and ensure you have a wonderful experience on the mountain.</span> </a>
+                </li>
+            </ul>
+            <p class="ClearBoth"><em>"I had a good time, and I learned some good tips. 2 hours goes by fast."</em><br> -Robert, intermediate skier
+                <a class="OrangeTextColor"
+                href="#">Read More</a>
+            </p>
+        </div>
+        <div class="span3">
+            <h2 class="BigHeader">Nick</h2>
+            <ul class="hover_block">
+                <li class="OutLine">
+                    <a href="/"><img src="img/2.jpg" alt="test" />
+                        <span>Tim grew up in Oregon and spent his winters and often summers riding at Mt. Hood, before moving to Tahoe a few years ago. He loves to teach all ages and experiences, ranging from little ones to adults, first-timers to hardcore park rats looking to improve their arsenal of spins and grabs.</span> </a>
+                </li>
+            </ul>
+            <p class="ClearBoth"><em>"Nick was knowledgeable, patient and easy-going. I learned a lot and even enjoyed myself in the process."</em><br> -Lindsey, beginner snowboarder
+                <a class="OrangeTextColor"
+                href="#">Read More</a>
+            </p>
+        </div>
+        <div class="span3">
+            <h2 class="BigHeader">Kiley</h2>
+            <ul class="hover_block">
+                <li class="OutLine">
+                    <a href="/"><img src="img/3.jpg" alt="test" />
+                        <span>At the age of two, Kiley began her life by chasing her ski nut parents through the steeps, trees and chutes of Alpine Meadows, Lake Tahoe. Their passion for the sport, love for their community, and strong ambition have rubbed off on Kiley and pushed her to become the family/community oriented skier she is today. Always willing and wanting to share the ski love. Following snow stoked seasons at "Alpine High", she traveled to UC Boulder to pursue an undergraduate degree in skiing with minors in Latin American and Native American studies. Between exams you could find here endlessly exploring the mountains of Utah, Wyoming, California, Colorado, Oregon, BC and Alaska. Now back in Tahoe, she is looking forward to time back on her home mountain. You can find her on hill, with a permanent smile and trails of laughter...and never without candy in my pockets</span></a>
+                </li>
+            </ul>
+            <p class="ClearBoth"><em>"Kiley was great, we learned a lot and we also had a lot of fun. I would really like to take some more classes with her next weekend or the weekend after."</em><br> - Judit, beginner skier
+                <a class="OrangeTextColor"
+                href="#">Read More</a>
+            </p>
+        </div>
+        <div class="span3">
+            <h2 class="BigHeader">Brian</h2>
+            <ul class="hover_block">
+                <li class="OutLine">
+                    <a href="/"><img src="img/4.jpg" alt="test" />
+                        <span>Brian grew up in the Bay Area and skied weekends at Bear Valley, CA before moving out to the icy slopes of New Hampshire. He taught skiing at Dartmouth for 4 years, before settling back in California and establishing himself as a regular weekend warrior at Squaw Valley (he calls San Francisco home from Monday through Thursday). He has previously taught skiers ages 17 and up, and has significant experience teaching in the terrain park. Averaging 30 days on the mountain the past 4 winters, Brian delights in teaching everyone from first-timers to fellow thrill-seekers looking to perfect their technique in either the deep moguls off KT or the pillows of powder in Silverado.</span> </a>
+                </li>
+            </ul>
+            <p class="ClearBoth"><em>"Brian is the reason I am where I am today. My next medal is dedicated to him"</em><br> -Lindsey Vonn, olympic skier
+                <a class="OrangeTextColor"
+                href="#">Read More</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Instructors loaded from Database-->
+<ul>
+
+<% @instructors.each do |i| %>
+
+  <li><%= i.name %></li>
+  <li><%= i.email %></li>
+  <li><%= i.description %></li>
+
+<% end %>
+
+</ul>
+
+<ul class='tweets'>
+    <script id="template" type="text/x-handlebars-template">
+        <li>
+            <h2>{{author}}</h2>
+            <p>{{tweet}}</p>
+        </li>
+    </script>
+</ul>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<!-- load the handlebars template -->
+<script type="text/javascript">
+$(document).ready(function(){
+    // e.preventDefault();
+    console.log('tt');
+
+});
+
+</script>

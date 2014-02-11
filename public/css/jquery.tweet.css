@@ -1,0 +1,40 @@
+/*.tweet,
+.query {
+	color: #085258;
+}*/
+
+	.tweet_list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow-y: hidden;
+	}
+	
+		.tweet_list li {
+			overflow-y: auto;
+			overflow-x: hidden;
+			padding: 0.5em;
+			list-style-type: none;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+					}
+				
+		.tweet_list .tweet_even {
+		  background-color: #EDEDED;
+		  border: 1px solid #E0E0E0;
+		}
+		
+		.tweet_list .tweet_avatar {
+			padding-right: .5em; float: left;
+		}
+		
+			.tweet_list .tweet_avatar img {
+				vertical-align: middle;
+			}
+	
+      #ticker ul.tweet_list {
+        height:20em;
+        overflow-y:hidden;
+      }
+    

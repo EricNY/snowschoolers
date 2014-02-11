@@ -1,0 +1,288 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color:#666;
+}
+h1,h2,h3,h4,h5,h6 {
+ font-family: 'Poiret One', elvetica, Arial, sans-serif;
+ font-weight: normal;
+}
+p {
+  text-align: justify;
+}
+.StyleP{
+  letter-spacing: 1px;
+  line-height: 2;
+}
+.Left{float:left;}
+.Right{float:right;}	
+.OutLine{outline: 1px solid #D5D5D5;}	
+.ClearBoth{
+	clear:both;}
+.NoPadding{
+	padding:0;
+	}
+.MarginBottom30{margin-bottom:30px;}
+ul.Social li {
+  float: left;
+  height: 25px;
+  margin: 0 5px;
+  width: 20px;
+}	
+ul.Social li a {
+  display: block;
+  float: left;
+  height: 25px;
+  text-indent: -9999px;
+  width: 22px;
+  opacity:.7;
+}
+ul.Social li a:hover{
+	opacity:1;
+	}
+.Rss{
+  background: url("../img/Rss.png") no-repeat scroll 0 6px transparent;
+}
+.Facebook{
+  background: url("../img/Facebook.png") no-repeat scroll 0 6px transparent;
+}
+.Twitter{
+  background: url("../img/Twitter.png") no-repeat scroll 0 6px transparent;
+}
+.Dribbble{
+  background: url("../img/Dribbble.png") no-repeat scroll 0 6px transparent;
+}
+.YouTube{
+  background: url("../img/YouTube.png") no-repeat scroll 0 6px transparent;
+}	
+/* back to top */	
+#toTop {
+  background: none repeat scroll 0 0 #E9E9E9;
+  border-bottom: 2px solid #d2d2d2;
+  border-top: 2px solid #d2d2d2;
+  bottom: 10px;
+  color: #333333;
+  cursor: pointer;
+  display:none;
+  font-size: 11px;
+  padding: 5px 15px;
+  position: fixed;
+  right: -1px;
+  text-align: center;
+}	
+/* sliding-panel-fixed */
+.panel {
+position: fixed;
+top: 80px;
+left: 0;
+display: none;
+background: #000000;
+border:1px solid #111111;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-webkit-border-bottom-right-radius: 5px;
+height: auto;
+padding:40px 5px 5px;
+filter: alpha(opacity=85);
+opacity: .95;
+}
+.panel h3{margin-left: 85px;}
+.panel a, .panel a:visited{
+margin: 0;
+padding: 0;
+color: #9FC54E;
+text-decoration: none;
+border-bottom: 1px solid #9FC54E;
+}
+.panel a:hover, .panel a:visited:hover{
+margin: 0;
+padding: 0;
+color: #ffffff;
+text-decoration: none;
+border-bottom: 1px solid #ffffff;
+}
+a.trigger {
+  background: url("../img/color.png") no-repeat scroll 85% 55% #333333;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #FFFFFF;
+  display: block;
+  left: 0;
+  padding: 10px 12px 18px 18px;
+  position: fixed;
+  text-decoration: none;
+  top: 90px;
+  -webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 0px;
+}
+a.trigger:hover{
+  background: url("../img/color.png") no-repeat scroll 85% 55% #3f3f3f;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #FFFFFF;
+  display: block;
+  left: 0;
+  padding: 10px 12px 18px 18px;
+  position: fixed;
+  text-decoration: none;
+  top: 90px;
+  -webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 0px;
+}
+a.active.trigger {
+background:#222222 url(../img/minus.png) 85% 55% no-repeat;
+}
+.NavHeight{
+	min-height:70px;}
+.TitleBg{
+	background:url("../img/scan-lines.png");
+	}
+.Divider{
+	margin-top:15px;
+	margin-bottom:15px;}	
+.HomeIcon {
+  background: url("../img/home.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}
+.BooksIcon {
+  background: url("../img/books.png") no-repeat scroll 0 8px transparent;
+  padding-left: 40px;
+}
+.GlassIcon {
+  background: url("../img/Glass.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}	
+.Globe_SIcon {
+  background: url("../img/Globe2.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}	
+.Applications {
+  background: url("../img/Applications.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}
+.Group {
+  background: url("../img/Group.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}
+.Clock {
+  background: url("../img/Clock.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}
+.Image {
+  background: url("../img/Image.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}
+.Speech_Bubbles {
+  background: url("../img/Speech_Bubbles.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}
+.Sign_Post{
+  background: url("../img/Sign_Post.png") no-repeat scroll 0 6px transparent;
+  padding-left: 40px;
+}
+
+.Padding5{
+	padding:5px;}	
+.Archives ul {
+  border-top: 1px dashed #E0E0E0;
+  margin-top: 5px;
+}
+.Archives ul li{
+display:block;
+width:100%;
+	}
+.Archives ul li a {
+  border-bottom: 1px dashed #E0E0E0;
+  display: block;
+  padding: 5px;
+  color:#a6a6a6;
+}
+ul.LatestNews li{
+	display:block;
+	clear:both;
+	padding:5px 0;}
+ul.LatestNews li a img{
+	 border: 3px solid #FFFFFF;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 65px;}	
+.Headline{
+	display:block;
+	color:#A6A6A6;}
+.Timer{
+	color:#A6A6A6;
+	clear:both;}		 
+.Archives ul li a:hover{
+	background-color:#FCFCFC;}
+/*  Animate a hover with jQuery  */
+				ul.hover_block li {
+			  background: none repeat scroll 0 0 #FFF;
+			  float: left;
+			  height: 300px;
+			  list-style: none outside none;
+			  margin-bottom: 20px;
+			  padding: 10px;
+			  position: relative;
+			  width: 249px;
+			}
+				ul.hover_block li a {
+			  color: #000000;
+			  display: block;
+			  height: 265px;
+			  overflow: hidden;
+			  padding: 16px;
+			  position: relative;
+			  width: 217px;
+			}
+
+	ul.hover_block li a {
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+		ul.hover_block li img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 0;
+		}
+.StylePhoto{
+	margin:5px 0;
+	 }
+.navbar .nav > li > a{
+	font-size: 1.1em;
+	text-transform: uppercase;
+	}
+.label, .badge{
+	font-weight:normal;
+	margin-left: 5px;
+	}		 
+.dropdown-menu a	{
+	text-transform:uppercase;}
+.InnerTitle{
+	border-bottom: 3px solid #bfbfbf;
+	border-top: 3px solid #bfbfbf;}	
+.InnerTitle h1 {
+  font-size: 2.5em;
+  padding: 20px 0 20px 55px;
+  text-transform: uppercase;
+}
+.InnerTitleIcon {
+  background: url("../img/title_icon.png") no-repeat scroll 0 18px transparent;
+}
+.ServicesStyle{
+	border-bottom: 1px solid #cfcfcf;
+	margin:25px 0;
+	}
+.ServicesBigImg{
+	border: 6px solid #FCFCFC;
+    margin: 0 5px 40px 20px;
+	}
+.ServicesIcon{
+	margin: 15px 15px 15px 0;
+	}	
